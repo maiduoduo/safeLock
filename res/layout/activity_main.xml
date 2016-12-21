@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/password_top" >
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请输入安全锁密码"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/delete"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/delete_selector"
+        android:onClick="del"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/passwordfild"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/password_text" 
+        android:orientation="horizontal">
+        <RelativeLayout 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+            <LinearLayout 
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+            <EditText
+                android:id="@+id/password1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:background="@drawable/blank"
+                android:maxLength="1"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:inputType="numberPassword" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/point1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:background="@drawable/point" />
+
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/password2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/blank"
+                android:layout_centerInParent="true"
+                android:maxLength="1"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:inputType="numberPassword" >
+            </EditText>
+            <ImageView
+                android:id="@+id/point2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:background="@drawable/point" />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/password3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/blank"
+                android:layout_centerInParent="true"
+                android:maxLength="1"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:inputType="numberPassword" >
+            </EditText>
+            <ImageView
+                android:id="@+id/point3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:background="@drawable/point" />
+        </RelativeLayout>
+        <RelativeLayout 
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/password4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@drawable/blank"
+                android:layout_centerInParent="true"
+                android:maxLength="1"
+                android:focusable="false"
+                android:cursorVisible="false"
+                android:inputType="numberPassword" >
+            </EditText>
+            <ImageView
+                android:id="@+id/point4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:background="@drawable/point" />
+        </RelativeLayout>
+    </LinearLayout>
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="220dp"
+	    android:background="@drawable/k_bg"
+	    android:layout_alignParentBottom="true" >
+		<RelativeLayout 
+		    android:id="@+id/k_layout1"
+		    android:layout_width="800dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="12dp">
+	    <Button
+	        android:id="@+id/one"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="4dp"
+	        android:background="@drawable/k_b_selector"
+	        android:text="1"
+	        android:onClick="one"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+	    <Button
+	        android:id="@+id/three"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/k_b_selector"
+	        android:layout_marginRight="4dp"
+	        android:text="3"
+	        android:onClick="three"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+
+	    <Button
+	        android:id="@+id/tow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/k_b_selector"
+	        android:text="2"
+	        android:onClick="tow"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:id="@+id/k_layout2"
+		    android:layout_width="800dp"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/k_layout1"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="4dp">
+	    <Button
+	        android:id="@+id/four"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="4dp"
+	        android:background="@drawable/k_b_selector"
+	        android:text="4"
+	        android:onClick="four"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+	    <Button
+	        android:id="@+id/six"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/k_b_selector"
+	        android:layout_marginRight="4dp"
+	        android:text="6"
+	        android:onClick="six"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+
+	    <Button
+	        android:id="@+id/five"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/k_b_selector"
+	        android:text="5"
+	        android:onClick="five"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+	</RelativeLayout>
+	<RelativeLayout 
+		    android:layout_width="800dp"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/k_layout2"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="4dp">
+	    <Button
+	        android:id="@+id/seven"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="4dp"
+	        android:background="@drawable/k_b_selector"
+	        android:text="7"
+	        android:onClick="seven"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+	    <Button
+	        android:id="@+id/nine"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/k_b_selector"
+	        android:layout_marginRight="4dp"
+	        android:text="9"
+	        android:onClick="nine"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+
+	    <Button
+	        android:id="@+id/eight"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/k_b_selector"
+	        android:text="8"
+	        android:onClick="eight"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+	</RelativeLayout>
+	<RelativeLayout 
+		    android:layout_width="800dp"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginBottom="4dp">
+	    <Button
+	        android:id="@+id/del"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="4dp"
+	        android:onClick="del"
+	        android:background="@drawable/k_del_selector"
+	        android:textColor="#FFFFFF"
+	        android:textSize="35sp" />
+	    <Button
+	        android:id="@+id/ok"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/k_ok_selector"
+	        android:layout_marginRight="4dp"
+	        android:onClick="ok"
+	        android:text="完成"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="20sp" />
+
+	    <Button
+	        android:id="@+id/zero"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/k_b_selector"
+	        android:text="0"
+	        android:onClick="zero"
+	        android:textColor="@drawable/k_textcolor_selector"
+	        android:textSize="35sp" />
+	</RelativeLayout>
+	</RelativeLayout>
+
+</RelativeLayout>
